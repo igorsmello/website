@@ -411,30 +411,8 @@ ul li {
 .details-title {
     font-size: 1.7rem;
 	border-right: 5px solid #ffffffbf;
-	white-space: nowrap;
-	overflow: hidden;
-	animation: animationDetails 500ms infinite normal, animationDetails2 6s steps(40) 1.7s infinite normal both;
-}
-/* Keyframes (animação de digitação) */
-@keyframes animationDetails {
-	from {
-		border-right-color: #24262a;
-	}
-
-	to {
-		border-right-color: transparent;
-	}
 }
 
-@keyframes animationDetails2 {
-	from {
-		width: 0;
-	}
-
-	to {
-		width: 13.5em;
-	}
-}
 
 .split {
     height: 100vh;
@@ -466,11 +444,13 @@ ul li {
 /*  Projetos */
 /*************/
 .projects {
+    height: auto;
     background-color: #000;
     margin-top: 0;
     color: #fff;
 }
 .section-projects {
+    height: auto;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
@@ -482,7 +462,7 @@ ul li {
 }
 .line-projects h2{
     margin-top: 1.25rem;
-    padding-top: 12.55rem;
+    padding-top: 12.55rem !important;
     font-size: 1.7rem;
     padding-bottom: 10px;
 }
@@ -776,11 +756,17 @@ ul li {
         padding-top: 15.55rem;
     }
 }
-@media (max-width: 415px) {
-    .text2 {
-        font-size: 2rem !important;
+@media (max-width: 450px) {
+    .bitmoji-grade-details {
+        display: none;
+    }
+    h2, h3 {
+        font-size: 1.5rem !important;
+    }
+    h4, h5 {
+        font-size: 0.9rem !important;
     }
     #projects-dev-button {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 }
