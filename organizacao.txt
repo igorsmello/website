@@ -1,0 +1,5 @@
+PRÓXIMAS TAREFAS:
+
+- Criar uma animação de digitação para a sections details no h2.
+
+- ver formas de preencher a section projects (mobile)
