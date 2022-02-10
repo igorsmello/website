@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: scroll;
 }
 @keyframes bgcolor {
 
@@ -107,24 +108,6 @@ ul li {
 /**********************/
 /*    Part Design     */
 /**********************/
-.title-design {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: auto;
-    height: auto;
-}
-/*
-h1 {
-    color: #fff;
-    margin: 0px;
-    padding: 0px;
-    transform: translate(-50% -50%);
-    text-align: center
-}
-*/
 
 /* Galeria de Imagenes */
 #galeria {
@@ -139,23 +122,22 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  #galeria img {
+}
+#galeria img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  #img-activa {
+#img-activa {
     width: 100%;
     height: auto;
-  }
+}
   
-  /*Contenedor Principal del Lightbox*/
+/*Contenedor Principal del Lightbox*/
   
-  #contenedor-principal {
+#contenedor-principal {
     position: fixed;
     top: 0;
     left: 0;
@@ -166,11 +148,10 @@ h1 {
     display: none;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  /*Contenedor interno del Lightbox*/
-  
-  #contenedor-interno {
+/*Contenedor interno del Lightbox*/
+#contenedor-interno {
     border: 2px #f3f3f3 solid;
     padding: 2px;
     background: #3f3f3f;
@@ -179,34 +160,47 @@ h1 {
     position: relative;
     display: flex;
     justify-content: center;
-  }
+}
   
-  /*Botões*/
-  
-  button {
+/*Botões*/
+button {
     cursor: pointer;
     background: transparent;
     border: none;
     color: #777676;
-  }
+}
   
-  #btn-cierra {
+#btn-cierra {
     position: absolute;
     top: 0;
     right: 0;
     font-size: 3rem;
-  }
-  
-  #btn-retrocede {
+}
+
+#btn-retrocede {
     position: absolute;
     top: 50%;
     left: 0;
     font-size: 3rem;
-  }
-  
-  #btn-adelanta {
+}
+
+#btn-adelanta {
     position: absolute;
     top: 50%;
     right: 0;
     font-size: 3rem;
-  }
+}
+
+/* media */
+@media (max-width: 430px) {
+    #navbar {
+        margin-bottom: 200px;
+    }
+    #galeria img {
+        width: 60%;
+        height: auto;
+    }
+    #img-activa {
+        width: 80%;
+    }
+}

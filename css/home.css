@@ -278,12 +278,14 @@ ul li {
 
 .bitmoji-grade {
     display: flex;
+    position: relative;
+    align-items: center;
     justify-content: center;
 }
 .bitmoji {
-    width: 30%;
-    height: auto;
+    width: 20%;
 }
+
 
 
 
@@ -400,45 +402,21 @@ ul li {
 /*******************/
 /*     Detalhes    */
 /*******************/
-.gradient {
-    background-color: #fff;
-    /* background-image: linear-gradient(to bottom, #434343 0%, black 100%); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-/* Animação h2 do details */
+/* h2 do details */
 .details-title {
     font-size: 1.7rem;
 	border-right: 5px solid #ffffffbf;
 }
-
-
 .split {
-    height: 100vh;
+    background-color: #fff;
     color: #000;
 }
-.split .area-1 {
-	height: 430px;
-	background-size: cover;
+.split .text-container {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
-.split .area-2 {
-	padding-top: 7.75rem;
-	padding-bottom: 7.75rem;
-}
-.split p {
-	margin-bottom: 2.25rem;
-}
-.bitmoji-grade-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
-.bitmoji-details {
-    width: auto;
-    height: auto;
-}
+
 
 /*************/
 /*  Projetos */
@@ -453,25 +431,23 @@ ul li {
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     background-color: #000;
 }
 .line-projects {
     text-align: center;
 }
 .line-projects h2{
-    margin-top: 1.25rem;
-    padding-top: 12.55rem !important;
+    margin-top: 5rem;
     font-size: 1.7rem;
-    padding-bottom: 10px;
 }
 .line-projects h4{
+    margin-top: 2.5rem;
     font-size: 1rem;
 }
 .projects-buttons {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
     padding-left: 50px;
     width: 100%;
     align-items: center;
@@ -479,9 +455,10 @@ ul li {
     text-align: center;
 }
 #projects-dev-button {
-    margin-right: 50px;
-    padding: 10px 20px;
-    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 0.9rem;
     font-weight: 500;
     background-image: url(../img/bg/dev-bg-button.gif);
     background-size: contain;
@@ -490,8 +467,9 @@ ul li {
     background-position: center;
 }
 #projects-design-button {
-    padding: 10px 20px;
-    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
     font-weight: 500;
     background-image: url(../img/bg/design-bg-button.gif);
     background-size: contain;
@@ -505,7 +483,7 @@ ul li {
 /******************/
 /* Contato */
 #go-to-work {
-    margin-top: 11rem;
+    margin-top: 5rem;
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
@@ -535,33 +513,7 @@ ul li {
 }
 .lets-work-together h5 {
     position: relative;
-    left: 38%;
-    font-size: 1.7rem;
-	border-right: 5px solid #24262a;
-	white-space: nowrap;
-	overflow: hidden;
-	animation: animationWork 500ms infinite normal, animationWork2 6s steps(40) 1.7s infinite normal both;
-}
-/* Keyframes (animação de digitação) */
-    @keyframes animationWork {
-        from {
-            border-right-color: #24262a;
-        }
-
-        to {
-            border-right-color: transparent;
-        }
-    }
-
-    @keyframes animationWork2 {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 11.2em;
-        }
-
+    font-size: 1.3rem;
 }
     
 
@@ -744,29 +696,4 @@ ul li {
 /*      Media     */
 /******************/
 /* outras medias */
-@media (min-width: 770px) and (max-width: 992px) {
-    /* Detalhes */
-    /************/
-    .bitmoji-details {
-        width: auto;
-        height: auto;
-    }
-    .line-projects h2{
-        margin-top: 1.25rem;
-        padding-top: 15.55rem;
-    }
-}
-@media (max-width: 450px) {
-    .bitmoji-grade-details {
-        display: none;
-    }
-    h2, h3 {
-        font-size: 1.5rem !important;
-    }
-    h4, h5 {
-        font-size: 0.9rem !important;
-    }
-    #projects-dev-button {
-        margin-bottom: 20px;
-    }
-}
+
