@@ -73,7 +73,7 @@
     display: block;
     position: fixed;
     width: 50%;
-    top: 0px; /* era 70px */
+    top: 0px;
     left: 0px;
     background: #fff;
     transition: 0.3s;

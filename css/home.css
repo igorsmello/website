@@ -405,18 +405,28 @@ ul li {
 /* h2 do details */
 .details-title {
     font-size: 1.7rem;
-	border-right: 5px solid #ffffffbf;
 }
 .split {
-    background-color: #fff;
-    color: #000;
+    background-image: linear-gradient(to top, black 0%, #434343 100%);
+    color: #fff;
 }
 .split .text-container {
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-
+.split .text-container h2 {
+    margin-bottom: 10px;
+}
+.split .text-container h5 {
+    margin-bottom: 10px;
+}
+.split .text-container .p-1 strong {
+    color: rgb(0, 255, 200);
+}
+.split .text-container .p-2 strong {
+    color: rgb(153, 255, 0);
+}
 
 /*************/
 /*  Projetos */
