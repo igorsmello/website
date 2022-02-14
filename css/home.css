@@ -420,6 +420,10 @@ ul li {
 }
 .split .text-container h5 {
     margin-bottom: 10px;
+    color: #eee
+}
+.p-details-title {
+    margin-bottom: 50px;
 }
 .split .text-container .p-1 strong {
     color: rgb(0, 255, 200);
@@ -479,6 +483,7 @@ ul li {
 #projects-design-button {
     position: relative;
     text-align: center;
+    margin-right: 10px;
     font-size: 0.9rem;
     font-weight: 500;
     background-image: url(../img/bg/design-bg-button.gif);

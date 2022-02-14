@@ -1,53 +1,26 @@
+////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////
+// Galeria de Imagens - modal
+let img= document.querySelectorAll('.small_img');
+let modal = document.querySelector('.modal');
+let modalImg = document.querySelector('#modal_img');
+let btClose = document.querySelector('#bt_close');
+let srcVal="";
 
-// Galeria Modal (part. design) //
-// Almiro  //
-const btnCierra = document.querySelector('#btn-cierra');
-const btnAdelanta = document.querySelector('#btn-adelanta');
-const btnRetrocede = document.querySelector('#btn-retrocede');
-const imagenes = document.querySelectorAll('#galeria img');
-const lightbox = document.querySelector('#contenedor-principal');
-const imagenActiva = document.querySelector('#img-activa');
-let indiceImagen = 0;
+for(let i = 0 ; i < img.length ; i++){
+    img[i].addEventListener('click',function(){
+        
+        srcVal = img[i].getAttribute('src');
+        modalImg.setAttribute('src', srcVal);
+        modal.classList.toggle('modal_active');
+    });
+    
+}
 
-/*Abre el Lightbox*/
-const abreLightbox = (event) => {
-  imagenActiva.src = event.target.src;
-  lightbox.style.display = 'flex';
-  indiceImagen = Array.from(imagenes).indexOf(event.target);
-};
 
-imagenes.forEach((imagen) => {
-  imagen.addEventListener('click', abreLightbox);
+btClose.addEventListener('click', function(){
+    modal.classList.toggle('modal_active');
 });
-
-/*Cierra el Lightbox */
-btnCierra.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-
-/* Adelanta la imagen*/
-const adelantaImagen = () => {
-  if (indiceImagen === imagenes.length - 1) {
-    indiceImagen = -1;
-  }
-  imagenActiva.src = imagenes[indiceImagen + 1].src;
-  indiceImagen++;
-};
-
-btnAdelanta.addEventListener('click', adelantaImagen);
-
-/*Retrocede la Imagen*/
-const retrocederImagen = () => {
-  if (indiceImagen === 0) {
-    indiceImagen = imagenes.length;
-  }
-  imagenActiva.src = imagenes[indiceImagen - 1].src;
-  indiceImagen--;
-};
-
-btnRetrocede.addEventListener('click', retrocederImagen);
 
 /////////////////////////////////////////////////////////////////////////////
 

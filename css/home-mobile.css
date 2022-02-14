@@ -49,14 +49,12 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
-
 #logo {
     display: none;
 }
 #header #logo:hover {
     color: rgba(255, 255, 255, 0.829);
 }
-
 #header {
     box-sizing: border-box;
     height: 70px;
@@ -68,7 +66,6 @@
     background: transparent;
     right: 0;
 }
-
 #menu {
     display: block;
     position: fixed;
@@ -77,7 +74,7 @@
     left: 0px;
     background: #fff;
     transition: 0.3s;
-    z-index: 10;
+    z-index: 1;
     min-height: 100%;
     visibility: hidden;
     overflow-y: hidden;
@@ -91,7 +88,6 @@
     visibility: visible;
     overflow-y: auto;
 }
-
 #menu a {
     display: block;
     padding: 1rem 0;
@@ -115,7 +111,6 @@
     width: 20px;
     height: 20px;
 }
-
 #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -125,7 +120,6 @@
     cursor: pointer;
     gap: 0.5rem;
 }
-
 #hamburger {
     border-top: 2px solid;
     width: 20px;
