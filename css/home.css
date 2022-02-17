@@ -431,6 +431,9 @@ ul li {
 .split .text-container .p-2 strong {
     color: rgb(153, 255, 0);
 }
+.split .text-container .p-3 strong {
+    color: rgb(253, 184, 56);
+}
 
 /*************/
 /*  Projetos */
@@ -439,6 +442,7 @@ ul li {
     height: auto;
     background-color: #000;
     margin-top: 0;
+    margin-bottom: 150px;
     color: #fff;
 }
 .section-projects {
@@ -499,6 +503,7 @@ ul li {
 /* Contato */
 #go-to-work {
     margin-top: 5rem;
+    margin-bottom: 5rem;
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
