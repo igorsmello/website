@@ -410,7 +410,7 @@ ul li {
     font-size: 1.7rem;
 }
 .split {
-    background-color: rgba(24, 24, 24, 0.5);
+    background-color: rgba(20, 20, 20, 0.5);
     /*background-image: linear-gradient(to top, black 0%, #434343 100%);*/
     color: #fff;
 }
@@ -446,8 +446,8 @@ ul li {
 /*  Projetos */
 /*************/
 .projects {
+    background-color: rgba(37, 37, 37, 0.5);
     height: auto;
-    background-color: rgb(20, 20, 20);
     margin-top: 0;
     color: #fff;
 }
@@ -457,7 +457,7 @@ ul li {
     margin-right: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: rgb(20, 20, 20);
+    
 }
 .line-projects {
     text-align: center;
@@ -533,9 +533,8 @@ ul li {
     align-items: center;
     text-align: center;
     color: #fff;
-    background-color: rgb(12, 12, 12);
+    background-color: rgba(20, 20, 20, 0.5);
     /*background-image: linear-gradient(to bottom, black, #434343);*/
-    border-top: 2px solid #24262a;
 }
 #go-to-work h2 {
     font-size: 1.7rem;
@@ -559,7 +558,9 @@ ul li {
     position: relative;
     font-size: 1.3rem;
 }
-    
+.lets-work-together h5 span {
+    color: greenyellow;
+}
 
 
 
