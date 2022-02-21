@@ -264,6 +264,9 @@ ul li {
 .basic-1 .text-container {
     margin-top: 3rem;
 }
+.basic-1 .text-container h2 {
+    padding-top: 1rem;
+}
 
 .basic-1 .time {
 	margin-bottom: 0.5rem;
@@ -358,7 +361,7 @@ ul li {
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 }
 .card-container .card .design-card {
-    background-image: url(../img/bg/design-gif.gif);
+    background-image: url(../img/bg/flat-design.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -546,7 +549,7 @@ ul li {
     width: 20%;
     height: 20%;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 2px solid rgb(66, 66, 66);
 }
 .lets-work-together {
     text-align: center;

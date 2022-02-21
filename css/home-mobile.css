@@ -75,7 +75,8 @@ a {
     width: 50%;
     top: 0px;
     left: 0px;
-    background: #fff;
+    background: #000;
+    color: #fff;
     transition: 0.3s;
     z-index: 1;
     min-height: 100%;
@@ -84,21 +85,8 @@ a {
     will-change: transform;
     backface-visibility: hidden;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
-    animation: bgcolorMenu normal infinite 13s;
 }
-@keyframes bgcolorMenu {
-    20% {
-        background: #fff;
-    }
-    60% {
-        background: #000;
-        color: #fff;
 
-    }
-    100% {
-        background: #fff;
-    }
-}
 #nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;
@@ -183,7 +171,7 @@ a {
     color: #fff;
 }
 .card-container .card .design-card {
-    background-image: url(../img/bg/design-gif.gif);
+    background-image: url(../img/bg/flat-design.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

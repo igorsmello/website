@@ -136,12 +136,11 @@ ul li {
 .footer {
 	padding-top: 4.25rem;
 	padding-bottom: 2rem;
-	background-color: transparent;
-    width: 98vw;
-    max-width: 1000px;
+	background-color: black;
+    width: 100vw;
 	text-align: center;
     color: #fff;
-    border-top: 2px solid #fff;
+    border-top: 1px solid #fff;
 }
 .footer a {
 	text-decoration: none;
