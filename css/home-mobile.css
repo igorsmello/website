@@ -75,8 +75,8 @@ a {
     width: 50%;
     top: 0px;
     left: 0px;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     transition: 0.3s;
     z-index: 1;
     min-height: 100%;
@@ -185,7 +185,7 @@ a {
     text-shadow: #000 2px 2px;
 }
 .card-container .card .seo-card {
-    background-image: url(../img/bg/seo-gif.gif);
+    background-image: url(../img/bg/seo-google-rank.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
