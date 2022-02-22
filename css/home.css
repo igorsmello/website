@@ -441,8 +441,37 @@ ul li {
 .split .text-container .p-2 strong {
     color: rgb(153, 255, 0);
 }
-.split .text-container .p-3 strong {
-    color: rgb(253, 184, 56);
+
+/********************/
+/* Caroussel Skills */
+/********************/
+.card-skills {
+    height: 100px;
+    display: flex;
+}
+.flex-img img {
+    width: 80%;
+    height: 100%;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 20% 20%;
+    padding: 10px;
+}
+.flex-img img:hover {
+    cursor: pointer;
+    transition: all .2s ease;
+    transform: scale(1.1);
+}
+#node-ico {
+    background-color: #689b57;
+}
+#python-ico {
+    background-color: #292D47;
+}
+#js-ico {
+    background-color: #e49f1f;
+}
+#b4-ico {
+    background-color: #613F8F;
 }
 
 /*************/
