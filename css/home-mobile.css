@@ -213,8 +213,8 @@ a {
     display: flex;
 }
 .flex-img2 img {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 60%;
     border: 2px solid rgb(44, 44, 44);
     border-radius: 5%;
     margin: 10px;
@@ -275,6 +275,14 @@ a {
 /*********/
 /* Media */
 /*********/
+@media (min-width: 708px) and  (max-width: 768px) {
+    .card-skills2 {
+        display: none !important;
+    }
+    .card-skills {
+        display: flex;
+    }
+}
 @media (max-width: 430px) {
     .h2-large {
         font-size: 2rem !important;
