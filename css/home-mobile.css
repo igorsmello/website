@@ -289,7 +289,10 @@ a {
     }
     .text2 {
         font-size: 1.5rem !important;
+        border-right: 5px solid #ffffffbf;
+        box-sizing: border-box;
     }
+    
     #projects-design-button {
         margin-top: 20px;
     }
