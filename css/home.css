@@ -572,14 +572,6 @@ ul li {
     font-size: 1.7rem;
     position: relative;
 }
-.img-work {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-    border: 2px solid rgb(66, 66, 66);
-}
 .lets-work-together {
     text-align: center;
     align-items: center;
