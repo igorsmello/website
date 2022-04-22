@@ -9,23 +9,15 @@ body {
 @keyframes bgcolor {
 
     0% {
-        background: rgb(20, 20, 20);
+        background: rgb(0, 0, 0);
     }
-    20% {
-        background: rgb(39, 39, 39);
-    }
-    40% {
-        background: rgb(36, 34, 34);
-    }
-    60% {
-        background: rgb(56, 56, 56);
-    }
-    80% {
-        background: rgb(24, 24, 24);
+    50% {
+        background: rgb(2, 2, 2);
     }
     100% {
-        background: rgb(4, 4, 4);
+        background: rgb(0, 0, 0);
     }
+    
 }
 
 /* Botão voltar ao topo */

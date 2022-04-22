@@ -436,9 +436,13 @@ ul li {
     cursor: pointer;
 }
 .split .text-container .p-1 strong {
-    color: rgb(0, 255, 200);
+    color: rgb(18, 247, 247);
 }
 .split .text-container .p-2 strong {
+    color: rgb(0, 255, 200);
+}
+
+.split .text-container .p-3 strong {
     color: rgb(153, 255, 0);
 }
 
@@ -722,6 +726,11 @@ ul li {
     position: relative;
     top: -100px;
     left: -20px;
+}
+.curriculo-html #navbar-curriculum li:hover {
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        transform: scale(1.07);
 }
 .part-pdf-curriculum {
 	text-align: center;
