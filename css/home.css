@@ -164,7 +164,6 @@ ul li {
 #navbar-items {
     display: flex;
     list-style: none;
-    text-transform: uppercase;
 }
 #navbar-items li {
     padding: 10px;
