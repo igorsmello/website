@@ -5,7 +5,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 @keyframes bgcolor {
 
     0% {
@@ -19,7 +18,6 @@ body {
     }
     
 }
-
 /* Botão voltar ao topo */
 .back-to-top {
     display: inline-block;
@@ -73,7 +71,6 @@ ul li {
     transform: scale(0.9);
     transition: all 0.2s;
 }
-
 /* divisória */
 .divisoria {
     padding: 100px;
@@ -142,6 +139,7 @@ ul li {
 }
 .ex-header h3 {
     margin: 100px 0;
+    font-size: 20px;
 }
 #navbar-projetosdev {
     position: relative;
@@ -161,35 +159,46 @@ ul li {
         transform: scale(1.07);
 }
 
-/********************/
-/*     Conteúdo     */
-/********************/
-.image-container {
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
+/************/
+/* Conteúdo */
+/************/
+.recreate-title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
-.image-container img {
-    margin: 0;
-    transition: all 0.2s;
+.recreate-projects {
+    width: 90%;
+    display: flex;
+    margin: auto;
 }
-.image-container:hover img {
-	-moz-transform: scale(1.02);
-	-webkit-transform: scale(1.02);
-	transform: scale(1.02);
+.recreate-projects img {
+    width: 60%;
 }
-.projects h4 {
-    margin-top: 20px;
-    margin-bottom: 25px;
+.recreate-projects-one {
+    width: 40%;
+    margin-left: 20px;
 }
-.projects h5 {
-    margin-bottom: 25px;
+.recreate-projects-one h4 {
+    text-align: center;
+    margin-bottom: 50px;
 }
-.projects .line-pull {
-    margin-bottom: 30px;
+.recreate-projects-one p {
+    margin: 20px 20px;
 }
-
-
+.relation {
+    font-weight: bolder;
+}
+.btn {
+    margin: 10px 20px;
+}
+.separate {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: grey;
+    width: 90%;
+}
+ 
 
 /******************/
 /*     Footer     */
@@ -302,4 +311,33 @@ ul li {
 .copyright h5 {
     font-weight: 400;
     font-size: 0.8rem;
+}
+
+/**********/
+/* MOBILE */
+/**********/
+@media screen and (max-width: 768px) {
+    .recreate-projects {
+        display: block;
+    }
+    .recreate-projects img {
+        width: 100%;
+    }
+    .recreate-projects-one {
+        width: 100%;
+    }
+    .recreate-projects-one h4 {
+        margin-top: 50px;
+    }
+    /* inverção da ordem da aparição */
+    #starbucks {
+        display: flex;
+        flex-direction: column;
+    }
+    #starbucks img{
+        order: 1;
+    }
+    #starbucks .recreate-projects-one {
+        order: 2;
+    }
 }
