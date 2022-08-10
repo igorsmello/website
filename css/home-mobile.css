@@ -123,6 +123,10 @@ a {
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+    /* tirando contorno do menu hamburger*/
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
 }
 #hamburger {
     border-top: 2px solid;
