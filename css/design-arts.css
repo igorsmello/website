@@ -3,28 +3,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     place-items: center;
+    overflow-x: hidden;
 }
 @keyframes bgcolor {
 
     0% {
-        background: #34495e;
+        background: #000;
     }
-    20% {
-        background: #9b59b6;
-    }
-    40% {
-        background: #3498db;
-    }
-    60% {
-        background: #2ecc71;
-    }
-    80% {
-        background: #1abc9c;
+    50% {
+        background: rgb(41, 41, 41);
     }
     100% {
-        background: #f1c40f;
+        background: #000;
     }
-
 }
 
 /**********************/
@@ -133,14 +124,24 @@ ul li {
 /******************/
 /*     Footer     */
 /******************/
+@keyframes bgcolorfooter {
+    0% {
+        background: rgb(41, 41, 41);
+    }
+    50% {
+        background: #000;
+    }
+    100% {
+        background: rgb(41, 41, 41);
+    }
+}
 .footer {
 	padding-top: 4.25rem;
 	padding-bottom: 2rem;
-	background-color: black;
     width: 100vw;
 	text-align: center;
     color: #fff;
-    border-top: 1px solid #fff;
+    animation: bgcolorfooter infinite 20s;
 }
 .footer a {
 	text-decoration: none;
