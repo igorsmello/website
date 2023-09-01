@@ -214,33 +214,29 @@ ul li {
 /*******************************/
 /*** animação h3 (Front-end) ***/
 /*******************************/
-.text2 {
-	border-right: 5px solid #ffffffbf;
-	white-space: nowrap;
-	overflow: hidden;
-	animation: animationMain 500ms infinite normal, animationMain2 6s steps(40) 1.7s infinite normal both;
+.text2 /* h3 Front-end developer*/{
+    font-family: monospace;
+    border-right: 4px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 27ch;
+    font-size: 30px !important;
+    animation: typing 3s steps(26) infinite normal, 
+    blinking 0.5s 
+    infinite step-end alternate;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    
+}
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
 }
 
-/* Keyframes (animação de digitação) */
-@keyframes animationMain {
-	from {
-		border-right-color: rgba(255, 255, 255, .75);
-	}
-
-	to {
-		border-right-color: transparent;
-	}
-}
-
-@keyframes animationMain2 {
-	from {
-		width: 0;
-	}
-
-	to {
-		width: 11.4em;
-	}
-}
 
 
 /*************/
@@ -250,6 +246,41 @@ ul li {
     color: #fff;
     padding:0;
     margin:0;
+}
+
+/* text-type criando animaçao abaixo do Olá, Mundo */
+.container-text {
+    overflow: hidden;
+    font-family: monospace;
+}
+.container-text .text {
+    position: relative;
+    color: greenyellow;
+    font-size: 30px;
+    font-weight: 800;
+}
+.container-text .text.first-text {
+    color: #fff;
+}
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100% !important;
+    background-color: #000;
+    border-left: 2px solid greenyellow;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+
 }
 
 .basic-1 {
@@ -295,6 +326,8 @@ ul li {
 /********************/
 #services {
     color: #fff;
+    align-items: center;
+    justify-content: center;
 }
 .section-services {
     margin-left: 20px;
@@ -304,6 +337,8 @@ ul li {
 }
 .line-services {
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .card-container h2{
     font-size: 1.7rem;
@@ -320,6 +355,7 @@ ul li {
     width: 100%;
     max-height: fit-content;
     flex-wrap: wrap;
+    flex-direction: column;
     padding: 40px 0;
     background-color: rgba(37, 37, 37, 0.5);
     /*background-image: linear-gradient(to top, #434343 0%, black 100%);*/
@@ -473,6 +509,12 @@ ul li {
 #b4-ico {
     background-color: #613F8F;
 }
+#filmora-ico {
+    background-color: #133649;
+}
+#canva-ico {
+    background-color: #019499;
+}
 
 /*************/
 /*  Projetos */
@@ -515,7 +557,7 @@ ul li {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 800;
     background: transparent;
     border-radius: 50px;
     border-style: solid;
@@ -566,11 +608,7 @@ ul li {
     text-align: center;
     color: #fff;
     background-color: rgba(20, 20, 20, 0.5);
-    /*background-image: linear-gradient(to bottom, black, #434343);*/
-}
-#go-to-work h2 {
-    font-size: 1.7rem;
-    position: relative;
+    display: flex;
 }
 .lets-work-together {
     text-align: center;
@@ -578,12 +616,33 @@ ul li {
     justify-content: center;
     position: relative;
 }
-.lets-work-together h5 {
+.lets-work-together h4 {
     position: relative;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
-.lets-work-together h5 span {
-    color: greenyellow;
+#go-to-work h5 {
+    font-size: 1.6rem;
+}
+#go-to-work h6 {
+    font-size: 1.4rem;
+    color: lime;
+    max-width: 100vh;
+}
+#go-to-work #contact-email {
+    color: #0A74C7;
+}
+#go-to-work #contact-email:hover {
+    color: #0d90f5;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+#go-to-work #contact-whatsapp {
+    color: #32B509;
+}
+#go-to-work #contact-whatsapp:hover {
+    color: #45f80e;
+    transform: scale(1.1);
+    transition: all 0.2s;
 }
 
 

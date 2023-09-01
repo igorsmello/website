@@ -278,10 +278,10 @@ a {
 /*********/
 @media (min-width: 708px) and  (max-width: 768px) {
     .card-skills2 {
-        display: none !important;
+        display: flex !important;
     }
     .card-skills {
-        display: flex;
+        display: none;
     }
 }
 @media (max-width: 430px) {
@@ -302,5 +302,14 @@ a {
     .card-skills2 {
         display: none !important;
     }
+    .container-text .text {
+        font-size: 1.5rem !important;
+        font-weight: 50;
+    }
 }
-
+@media (min-width: 320px) {
+    .container-text .text {
+        font-size: 1.2rem !important;
+        font-weight: 80;
+    }
+}

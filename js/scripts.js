@@ -1,5 +1,30 @@
 ////////////////////////////////////////////////////////////////////////////
 
+// Animação de digitação do texto - Main na Home
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Desenvolvedor Front-end"
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "Programador JavaScript"
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "UI/UX"
+    }, 8000);
+    setTimeout(() => {
+        text.textContent = "Design Digital"
+    }, 12000);
+    setTimeout(() => {
+        text.textContent = "Editor de Vídeo"
+    }, 16000);
+}
+
+textLoad();
+setInterval(textLoad, 20000);
+
+
 // Galeria de Imagens - modal - design arts
 let img= document.querySelectorAll('.small_img');
 let modal = document.querySelector('.modal');
