@@ -389,8 +389,8 @@ ul li {
     background-color: whitesmoke;
 }
 .card-container .card:hover .box {
-    transform: translateY(-50px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 .card-container .card .design-card {
     background-image: url(../img/bg/flat-design.gif);
@@ -427,6 +427,7 @@ ul li {
     transition: 0.5s;
     margin-left: 50px;
     margin-bottom: 40px;
+    font-weight: bold;
 }
 .card-container .card .box .content p {
     font-size: 1rem;
@@ -434,6 +435,7 @@ ul li {
     color: #fff;
     z-index: 1;
     transition: 0.5s;
+    font-weight: bold;
 }
 
 
@@ -468,14 +470,13 @@ ul li {
     cursor: pointer;
 }
 .split .text-container .p-1 strong {
-    color: rgb(18, 247, 247);
+    color: #00FFC8;
 }
 .split .text-container .p-2 strong {
-    color: rgb(0, 255, 200);
-}
-
-.split .text-container .p-3 strong {
     color: rgb(153, 255, 0);
+}
+.split .text-container .p-3 strong {
+    color: rgb(248, 91, 18);
 }
 
 /********************/
@@ -486,34 +487,33 @@ ul li {
     display: flex;
 }
 .flex-img img {
-    width: 80%;
+    width: 50%;
     height: 100%;
-    border: 2px solid rgb(44, 44, 44);
-    border-radius: 20% 20%;
-    padding: 10px;
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 20%;
+    margin: 10px;
+    padding: 5px 3px;
+    
+}
+#designedition {
+    margin-top: 80px;
+}
+#skillsdev {
+    margin-top: 100px;
+}
+#othersskills {
+    margin-top: 100px;
 }
 .flex-img img:hover {
     cursor: pointer;
     transition: all .2s ease;
     transform: scale(1.1);
 }
-#node-ico {
-    background-color: #689b57;
+#filmora-ico, #figma-ico, #canva-ico {
+    background-color: #00FFC8;
 }
-#python-ico {
-    background-color: #292D47;
-}
-#js-ico {
-    background-color: #e49f1f;
-}
-#b4-ico {
-    background-color: #613F8F;
-}
-#filmora-ico {
-    background-color: #133649;
-}
-#canva-ico {
-    background-color: #019499;
+#html-ico, #css-ico, #js-ico, #git-github-ico {
+    background-color: #99FF00;
 }
 
 /*************/
