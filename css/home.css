@@ -119,8 +119,6 @@ ul li {
     margin: auto;
     transform: rotate(45deg);
 }
-/* Animação - JavaScript */
-
 
 /**********************/
 /*     Nav/Header     */
@@ -212,9 +210,9 @@ ul li {
 }
 
 /*******************************/
-/*** animação h3 (Front-end) ***/
+/*** animação h3 (Dev) ***/
 /*******************************/
-.text2 /* h3 Front-end developer*/{
+.text2 /* h3 Desenvolvedor de Sistemas*/{
     font-family: monospace;
     border-right: 4px solid;
     white-space: nowrap;
@@ -252,6 +250,7 @@ ul li {
 .container-text {
     overflow: hidden;
     font-family: monospace;
+    
 }
 .container-text .text {
     position: relative;

@@ -154,6 +154,13 @@ a {
     transform: rotate(-135deg);
     top: -7px;
 }
+/*****************************/
+/* Animação de Desenvolvedor */
+/*****************************/
+.text2 {
+    font-size: 25px !important;
+    
+}
 
 /*************/
 /*   Sobre   */
