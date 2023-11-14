@@ -4,9 +4,9 @@ body {
     place-items: center;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
     color: #fff;
     background-color: #000;
+    overflow-x: hidden !important;
 }
 /* Animação canva */
 @keyframes bgcolorcanvaname{
@@ -223,7 +223,7 @@ ul li {
 }
 .filmora-videos {
     max-width: 100vh;
-    margin-bottom: 100px;
+    margin-bottom: 125px;
 }
 .filmora-videos-shorts {
     max-height: 100vh;
@@ -232,6 +232,7 @@ ul li {
     margin-bottom: 100px;
     
 }
+
 video {
     animation: bgcolorfilmora 20s infinite !important;
     border-radius: 4px;
@@ -354,24 +355,20 @@ video {
 /**********/
 /* MOBILE */
 /**********/
-@media screen and (max-width: 768px) {
+@media (min-width: 300px) and  (max-width: 768px) {
     .ex-header h1 {
         margin: 30px 0;
-        font-size: 30px;
+        font-size: 25px;
     }
     .ex-header h3 {
         margin: 100px 0;
         font-size: 20px;
     }
-    .separate {
-        width: 95%;
-        padding: 0 0;
-    }
     .filmora-videos {
-        max-width: 80vh;
+        max-width: 80vw;
     }
     .filmora-videos-shorts {
-        max-height: 90vh;
-        max-width: 100vh;
+        max-height: 80vh;
+        max-width: 80vw;
     }
 }
