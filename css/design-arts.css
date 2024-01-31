@@ -8,55 +8,17 @@ body {
     background-color: #000;
     overflow-x: hidden !important;
 }
-/* Animação canva */
-@keyframes bgcolorcanvaname{
-    0% {
-        color: #fff;
-    }
-    50% {
-        color: #6674E6;
-    }
-    100% {
-        color: #fff;
-    }
-}
-@keyframes bgcolorcanva {
-    0% {
-        background: #6674E6;
-    }
-    50% {
-        background: #141414;
-    }
-    100% {
-        background: #6674E6;
-    }
-}
+/* Animação fundo #6674E6 */
 
-/* Animação filmora */
-@keyframes bgcolorfilmoraname{
+@keyframes bgcolordesign {
     0% {
-        color: #64CAAA;
+        background: #272727;
     }
     50% {
-        color: #253642;
+        background: #272727;
     }
     100% {
-        color: #64CAAA;
-    }
-}
-@keyframes bgcolorfilmora {
-    0% {
-        background: #141414;
-        border: 5px solid #64CAAA;
-    }
-    50% {
-        background: #64CAAA;
-        border: 5px solid #253642;
-        
-    }
-    100% {
-        background: #141414;
-        border: 5px solid #64CAAA;
+        background: #272727;
     }
 }
 
@@ -162,28 +124,26 @@ ul li {
 /*    Part Design     */
 /**********************/
 /* Galeria de imagens */
+.title-information {
+    margin: 50px 0;
+    text-shadow: 1px 1px #000;
+}
 
 /* gallery */
-/*canva */
-.container-img-canva {
-    margin-top: 200px;
+.container {
+    padding-bottom: 100px;
+}
+.container-img-fotos {
     text-align: center;
     max-width: 100%;
-    animation: bgcolorcanva 20s infinite;
+    animation: bgcolordesign 20s infinite;
 }
-.canva {
-    color: #6674E6;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    animation: bgcolorcanvaname 20s infinite;
-    margin-bottom: 100px;
-}
-.icon-svg {
-    width: 100px;
-    height: 100px;
-    margin-top: 100px;
+.igordesign {
+    width: 30%;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .card_img{
     width: 300px;
     height: 300px;
@@ -208,35 +168,7 @@ ul li {
     margin-bottom: 100px;
 }
 
-/* filmora */
-.container-img-filmora {
-    text-align: center;
-    max-width: 100%;
-    animation: bgcolorfilmora 20s infinite;
-}
-.filmora {
-    color: #64CAAA;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    animation: bgcolorfilmoraname 20s infinite;
-    margin-bottom: 100px;
-}
-.filmora-videos {
-    max-width: 100vh;
-    margin-bottom: 125px;
-}
-.filmora-videos-shorts {
-    max-height: 100vh;
-    max-width: 100vh;
-    margin: 20px;
-    margin-bottom: 100px;
-    
-}
 
-video {
-    animation: bgcolorfilmora 20s infinite !important;
-    border-radius: 4px;
-}
 
 
 /******************/
@@ -356,6 +288,9 @@ video {
 /* MOBILE */
 /**********/
 @media (min-width: 300px) and  (max-width: 768px) {
+    .igordesign {
+        width: 60%;
+    }
     .ex-header h1 {
         margin: 30px 0;
         font-size: 25px;
