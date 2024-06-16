@@ -165,6 +165,36 @@ ul li {
 /************/
 /* Conteúdo */
 /************/
+
+/* PRINCIPAIS PROJETOS */
+.mainprojectstitle {
+    text-align: center;
+    padding-top: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+.mainprojects {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+.mainprojects img {
+    width: 60%;
+}
+.mainprojects-one {
+    width: 40%;
+    margin-left: 20px;
+}
+.mainprojects-one h4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.mainprojects-one p {
+    margin: 20px 20px;
+}
+
+/* RECRIANDO SITES */
 .recreate-title {
     text-align: center;
     padding-top: 70px;
@@ -187,7 +217,7 @@ ul li {
     width: 40%;
     margin-left: 20px;
 }
-.recreate-projects-one h4 {
+.recreate-projects-one h4{
     text-align: center;
     margin-bottom: 50px;
 }
@@ -329,6 +359,22 @@ ul li {
 /* MOBILE */
 /**********/
 @media screen and (max-width: 768px) {
+
+    /*PRINCIPAIS PROJETOS */
+    .mainprojects {
+        display: block;
+    }
+    .mainprojects img {
+        width: 100%;
+    }
+    .mainprojects-one {
+        width: 100%;
+    }
+    .mainprojects-one h4 {
+        margin-top: 50px;
+    }
+
+    /* RECREANDO PROJETOS */
     .recreate-projects {
         display: block;
     }
