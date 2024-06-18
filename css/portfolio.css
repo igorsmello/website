@@ -167,6 +167,9 @@ ul li {
 /************/
 
 /* PRINCIPAIS PROJETOS */
+.section-mainprojects {
+    background-color: #131313;
+}
 .mainprojectstitle {
     text-align: center;
     padding-top: 70px;
@@ -181,6 +184,7 @@ ul li {
 }
 .mainprojects img {
     width: 60%;
+    margin-bottom: 70px;
 }
 .mainprojects-one {
     width: 40%;
