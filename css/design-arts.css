@@ -8,17 +8,20 @@ body {
     background-color: #000;
     overflow-x: hidden !important;
 }
+.title-information {
+    color: #000;
+}
 /* Animação fundo #6674E6 */
 
 @keyframes bgcolordesign {
     0% {
-        background: #272727;
+        background: #fff;
     }
     50% {
-        background: #272727;
+        background: #fff;
     }
     100% {
-        background: #272727;
+        background: #fff;
     }
 }
 
