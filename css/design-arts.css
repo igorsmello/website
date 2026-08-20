@@ -310,3 +310,7 @@ ul li {
         max-width: 80vw;
     }
 }
+
+.simple-space {
+    padding: 50px;
+}
