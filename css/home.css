@@ -192,14 +192,14 @@ ul li {
 }
 
 #showcase-container h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-top: 200px;
     line-height: 2rem;
     padding: 20px 0;
 }
 #showcase-container h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     padding: 20px 0;
     line-height: 1rem;
@@ -217,11 +217,12 @@ ul li {
     border-right: 4px solid;
     white-space: nowrap;
     overflow: hidden;
-    width: 27ch;
+    width: 19ch;
     font-size: 30px !important;
     animation: typing 3s steps(26) infinite normal, 
     blinking 0.5s 
     infinite step-end alternate;
+    display: none;
 }
 @keyframes typing {
     from {
@@ -233,6 +234,10 @@ ul li {
     50% {
         border-color: transparent;
     }
+}
+.text3 {
+    font-size: 2.5rem !important;
+    color: greenyellow;
 }
 
 
@@ -282,11 +287,6 @@ ul li {
 
 }
 
-.basic-1 {
-	padding-top: 7.75rem !important;
-	padding-bottom: 5.25rem !important; /* era 5.25 */
-}
-
 .basic-1 .text-container {
     margin-top: 3rem;
 }
@@ -314,7 +314,7 @@ ul li {
     justify-content: center;
 }
 .bitmoji {
-    width: 20%;
+    width: 40%;
 }
 
 
@@ -386,27 +386,39 @@ ul li {
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 .card-container .card:hover .box {
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .card-container .card .design-card {
-    background-image: url(../img/bg/flat-design.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg/flat-design.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-shadow: #000 2px 2px 2px;
 }
 .card-container .card .dev-card {
-    background-image: url(../img/bg/programming-gif.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg/programming-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-shadow: #000 2px 2px 2px;
 }
 .card-container .card .seo-card {
-    background-image: url(../img/bg/seo-google-rank.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/bg/seo-google-rank.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: #000 2px 2px 2px;
+}
+.card-container .card .vid-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/bg/bg-edicao.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -418,14 +430,12 @@ ul li {
     justify-content: center;
 }
 .card-container .card .box .content h3 {
-    top: -1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     position: relative;
-    right: 30px;
     font-size: 1.5rem;
     color: #fff;
     transition: 0.5s;
-    margin-left: 50px;
-    margin-bottom: 40px;
     font-weight: bold;
 }
 .card-container .card .box .content p {
