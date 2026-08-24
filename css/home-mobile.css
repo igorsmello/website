@@ -289,13 +289,13 @@ a {
         display: none !important;
     }
     .container-text .text {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
         font-weight: 50;
     }
 }
 @media (min-width: 320px) {
     .container-text .text {
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
         font-weight: 80;
     }
 }
