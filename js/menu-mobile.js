@@ -32,19 +32,19 @@ const text = document.querySelector(".sec-text");
 
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "Desenvolvedor Front-end"
+        text.textContent = "Desenvolvedor de Sites"
     }, 0);
     setTimeout(() => {
-        text.textContent = "Programador JavaScript"
+        text.textContent = "Designer Digital"
     }, 4000);
     setTimeout(() => {
-        text.textContent = "UI/UX"
+        text.textContent = "Designer Gráfico"
     }, 8000);
     setTimeout(() => {
-        text.textContent = "Design Digital"
+        text.textContent = "Editor de Vídeo"
     }, 12000);
     setTimeout(() => {
-        text.textContent = "Editor de Vídeo"
+        text.textContent = "Analista de Sistemas"
     }, 16000);
 }
 

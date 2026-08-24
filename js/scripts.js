@@ -11,10 +11,10 @@ const textLoad = () => {
         text.textContent = "Programador JavaScript"
     }, 4000);
     setTimeout(() => {
-        text.textContent = "UI/UX"
+        text.textContent = "UX"
     }, 8000);
     setTimeout(() => {
-        text.textContent = "Design Digital"
+        text.textContent = "Design Gráfico"
     }, 12000);
     setTimeout(() => {
         text.textContent = "Editor de Vídeo"
